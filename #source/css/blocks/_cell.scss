@@ -10,7 +10,7 @@
 
 	background-color: $cellColor;
 
-	&:hover {
+	&._animated {
 		animation-duration: 0.7s;
 		animation-name: rotateCell;
 		animation-fill-mode: forwards;
@@ -19,9 +19,9 @@
 
 @keyframes rotateCell {
 	from {
-		transform: perspective(100) rotateX(0deg);
+		transform: perspective(100px) rotateX(0deg);
 	}
 	to {
-		transform: perspective(100) rotateX(180deg);
+		transform: perspective(100px) rotateX(180deg);
 	}
 }

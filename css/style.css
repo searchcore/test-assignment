@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
 }
 
-.block {
+.cell {
   width: 5vw;
   height: 5vw;
   position: relative;
@@ -188,33 +188,33 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #505D68;
 }
 
-.block:hover {
+.cell._animated {
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
-  -webkit-animation-name: rotateBlock;
-          animation-name: rotateBlock;
+  -webkit-animation-name: rotateCell;
+          animation-name: rotateCell;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes rotateBlock {
+@-webkit-keyframes rotateCell {
   from {
-    -webkit-transform: perspective(100) rotateX(0deg);
-            transform: perspective(100) rotateX(0deg);
+    -webkit-transform: perspective(100px) rotateX(0deg);
+            transform: perspective(100px) rotateX(0deg);
   }
   to {
-    -webkit-transform: perspective(100) rotateX(180deg);
-            transform: perspective(100) rotateX(180deg);
+    -webkit-transform: perspective(100px) rotateX(180deg);
+            transform: perspective(100px) rotateX(180deg);
   }
 }
 
-@keyframes rotateBlock {
+@keyframes rotateCell {
   from {
-    -webkit-transform: perspective(100) rotateX(0deg);
-            transform: perspective(100) rotateX(0deg);
+    -webkit-transform: perspective(100px) rotateX(0deg);
+            transform: perspective(100px) rotateX(0deg);
   }
   to {
-    -webkit-transform: perspective(100) rotateX(180deg);
-            transform: perspective(100) rotateX(180deg);
+    -webkit-transform: perspective(100px) rotateX(180deg);
+            transform: perspective(100px) rotateX(180deg);
   }
 }
