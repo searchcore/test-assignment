@@ -1,0 +1,10 @@
+.block {
+	width: 5vw;
+	height: 5vw;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: $blockColor;
+}

@@ -1,0 +1,54 @@
+.block-showcase {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 10px;
+
+	background-color: $showcaseColor;
+
+	font-family: sans;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: $textColor;
+
+	&__blocks-container {
+		width: 46vw;
+
+		flex: 0 0 90%;
+
+		margin: 0 0 10px 0;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__block {
+		flex: 0 1 25%;
+		
+		padding: 10px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__button {
+		flex: 0 0 10%;
+
+		padding: 10px 20px 10px 20px;
+
+		background-color: $btnColor;
+
+		transition: background-color 0.3s ease, letter-spacing 0.3s ease;;
+
+		cursor: pointer;
+
+		&:hover {
+			background-color: #6F7AAE;
+			letter-spacing: 2px;
+		}
+	}
+}
