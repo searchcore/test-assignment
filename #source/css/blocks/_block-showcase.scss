@@ -14,16 +14,12 @@
 	color: $textColor;
 
 	&__blocks-container {
-		width: 46vw;
-
 		flex: 0 0 90%;
 
 		margin: 0 0 10px 0;
 
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 	&__block {
 		flex: 0 1 25%;

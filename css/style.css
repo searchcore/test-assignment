@@ -122,22 +122,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .block-showcase__blocks-container {
-  width: 46vw;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 90%;
           flex: 0 0 90%;
   margin: 0 0 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .block-showcase__block {
@@ -173,6 +165,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cell {
+  min-width: 50px;
+  min-height: 50px;
   width: 5vw;
   height: 5vw;
   position: relative;
