@@ -2,9 +2,26 @@
 	width: 5vw;
 	height: 5vw;
 
+	position: relative;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	background-color: $blockColor;
+
+	&:hover {
+		animation-duration: 0.7s;
+		animation-name: rotateBlock;
+		animation-fill-mode: forwards;
+	}
+}
+
+@keyframes rotateBlock {
+	from {
+		transform: perspective(100) rotateX(0deg);
+	}
+	to {
+		transform: perspective(100) rotateX(180deg);
+	}
 }

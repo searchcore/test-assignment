@@ -175,6 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 .block {
   width: 5vw;
   height: 5vw;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,4 +186,35 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   background-color: #505D68;
+}
+
+.block:hover {
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-name: rotateBlock;
+          animation-name: rotateBlock;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rotateBlock {
+  from {
+    -webkit-transform: perspective(100) rotateX(0deg);
+            transform: perspective(100) rotateX(0deg);
+  }
+  to {
+    -webkit-transform: perspective(100) rotateX(180deg);
+            transform: perspective(100) rotateX(180deg);
+  }
+}
+
+@keyframes rotateBlock {
+  from {
+    -webkit-transform: perspective(100) rotateX(0deg);
+            transform: perspective(100) rotateX(0deg);
+  }
+  to {
+    -webkit-transform: perspective(100) rotateX(180deg);
+            transform: perspective(100) rotateX(180deg);
+  }
 }
