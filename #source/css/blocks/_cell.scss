@@ -1,4 +1,4 @@
-.block {
+.cell {
 	width: 5vw;
 	height: 5vw;
 
@@ -8,16 +8,16 @@
 	justify-content: center;
 	align-items: center;
 
-	background-color: $blockColor;
+	background-color: $cellColor;
 
 	&:hover {
 		animation-duration: 0.7s;
-		animation-name: rotateBlock;
+		animation-name: rotateCell;
 		animation-fill-mode: forwards;
 	}
 }
 
-@keyframes rotateBlock {
+@keyframes rotateCell {
 	from {
 		transform: perspective(100) rotateX(0deg);
 	}
